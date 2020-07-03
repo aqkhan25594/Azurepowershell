@@ -1,0 +1,101 @@
+{
+ "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualNetworkName": {
+            "value": "Test-NSG1"
+        },
+        "resourceGroup": {
+            "value": "Test"
+        },
+        "addressSpaces": {
+            "value": [
+                "10.0.0.0/16"
+            ]
+        },
+        "ipv6Enabled": {
+            "value": false
+        },
+        "subnetCount": {
+            "value": 2
+        },
+        "subnet0_name": {
+            "value": "Web"
+        },
+        "subnet0_addressRange": {
+            "value": "10.0.0.0/24"
+        },
+        "subnet1_name": {
+            "value": "DB"
+        },
+        "subnet1_addressRange": {
+            "value": "10.0.1.0/24"
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        },
+        "firewallEnabled": {
+            "value": false
+        },
+        "bastionEnabled": {
+            "value": false
+        },
+        "networkInterfaceName": {
+            "value": "powershell-test43"
+        },
+        "networkSecurityGroupName": {
+            "value": "powershell-test-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "subnetName": {
+            "value": "Web"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/31502c63-bc9e-4dd2-815b-5c4095cb927c/resourceGroups/myResourceGroupDev/providers/Microsoft.Network/virtualNetworks/Test-NSG1"
+        },
+        "publicIpAddressName": {
+            "value": "powershell-test1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "powershell-test1"
+        },
+        "virtualMachineComputerName": {
+            "value": "powershell-test1"
+        },
+        "virtualMachineRG": {
+            "value": "myResourceGroupDev"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1s"
+        },
+        "adminUsername": {
+            "value": "ubuntu"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "myresourcegroupdevdia795"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/myresourcegroupdevdia795"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        }
+    }
+}
